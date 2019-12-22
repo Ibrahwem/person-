@@ -56,5 +56,8 @@ int main()
 			break;
 		}
 	}
+	for (int i = 0; i < size; i++) {
+		arr[i]->print();
+	}
 	return 0;
 }

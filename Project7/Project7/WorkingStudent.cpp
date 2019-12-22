@@ -1,19 +1,16 @@
 #include "WorkingStudent.h"
 
-WorkingStudent::WorkingStudent(bool same_ins, string ins, int AVR, float SAL, long ID, int Age) :employee(Age,ID,SAL), Student(ins, AVR,Age,ID)
+WorkingStudent::WorkingStudent(bool same_ins, string ins, int AVR, float SAL, long ID, int Age) :employee(Age,ID,SAL), Student(ins, AVR,Age,ID),person(Age,ID)
 {
 
 }
 
-istream& operator>>(std::istream& is, WorkingStudent& obj)
+void WorkingStudent::print()
 {
-	cout << "Same institute";
-	is >> obj.same_institute;
-	return is;
+	person::print();
+	cout << "same_institute : " << same_institute << endl;
+	cout << "same_ins : " << institute<<endl<<"average : "<< average << endl;
+	cout << "salary : " << salary << endl;
 }
 
-ostream& operator<<(ostream& os, const WorkingStudent& dt)
-{
-	// TODO: insert return statement here
-	return os;
-}
+

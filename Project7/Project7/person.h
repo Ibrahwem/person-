@@ -1,7 +1,6 @@
 #ifndef person_H
 #define person_H
 #include<iostream>
-#include<string.h>
 #include<string>
 using namespace std;
 class person
@@ -14,7 +13,7 @@ public:
 	person(int age, long id);//constructor
 	virtual ~person() {};//destructor
 	person(const person &);//copy constructor
-	friend istream& operator>>(std::istream& is, person& obj);
-	 friend ostream& operator<<(ostream& os, const person& dt);
+
+	virtual void print();
 };
 #endif

@@ -5,17 +5,11 @@ Student::Student(string INS, int AVR, int AGE, long ID):person(AGE,ID)
 	average = AVR;
 }
 
-istream& operator>>(std::istream& is, Student& obj)
+void Student::print()
 {
-	cout << "Enter institute name:" << endl;
-	is >> obj.institute;
-	cout << "Enter the average:" << endl;
-	is >> obj.average;
-	return is;
+	person::print();
+	cout << "institute : " << institute << endl;
+	cout << "average : " << average << endl;
 }
 
-ostream& operator<<(ostream& os, const Student& dt)
-{
-	// TODO: insert return statement here
-	return os;
-}
+

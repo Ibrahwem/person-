@@ -16,16 +16,10 @@ person::person(const person &other)
 	id = other.id;
 }
 
-istream& operator>>(std::istream& is, person& obj)
+void person::print()
 {
-	cout << "Enter age:" << endl;
-	is >> obj.age;
-	cout << "Enter ID" << endl;
-	is >> obj.id;
-	return is;
+	cout << "age : " << age << endl;
+	cout << "id : " << id << endl;
 }
 
-ostream& operator<<(ostream& os, const person& dt)
-{
-	return os;
-}
+
