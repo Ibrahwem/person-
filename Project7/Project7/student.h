@@ -8,7 +8,7 @@
 using namespace std;
 class Student:public person
 {
-private:
+protected:
 	string institute;
 	int average;
 public:

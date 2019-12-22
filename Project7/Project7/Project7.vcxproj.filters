@@ -24,6 +24,9 @@
     <ClInclude Include="employee.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WorkingStudent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="person.cpp">
@@ -34,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="employee.cpp">
       <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkingStudent.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

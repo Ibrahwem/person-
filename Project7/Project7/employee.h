@@ -7,7 +7,7 @@
 using namespace std;
 class employee:public person
 {
-private:
+protected:
 	float salary;
 public:
 	employee() { salary = 0; id = 0; age = 0; }//default constructor
