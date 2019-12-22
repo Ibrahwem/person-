@@ -14,5 +14,7 @@ public:
 	person(int age, long id);//constructor
 	virtual ~person() {};//destructor
 	person(const person &);//copy constructor
+	friend istream& operator>>(std::istream& is, person& obj);
+	 friend ostream& operator<<(ostream& os, const person& dt);
 };
 #endif

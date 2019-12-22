@@ -5,12 +5,14 @@
 #include<string.h>
 #include<string>
 using namespace std;
-class employee:public person
+class employee:virtual public person
 {
 protected:
 	float salary;
 public:
 	employee() { salary = 0; id = 0; age = 0; }//default constructor
 	employee(int AGE, long ID,float SAL);//constructor
+	friend istream& operator>>(std::istream& is, employee& obj);
+	friend ostream& operator<<(ostream& os, const employee& dt);
 };
 #endif
